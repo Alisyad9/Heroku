@@ -1,0 +1,29 @@
+{
+  "name": "mmb-blogging",
+  "version": "1.0.0",
+  "description": "## **fac22 Week 1 Project by Michael, Mohamed and Barbara**",
+  "main": "server.js",
+  "scripts": {
+    "test": "cypress open",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac22/mmb-blogging.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac22/mmb-blogging/issues"
+  },
+  "homepage": "https://github.com/fac22/mmb-blogging#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cypress": "^8.5.0",
+    "nodemon": "^2.0.13"
+  }
+  
+}

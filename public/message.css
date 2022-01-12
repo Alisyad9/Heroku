@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* .message {
+  background: cornsilk;
+  color: crimson;
+  display: flex;
+} */
+body {
+  height: 100vh;
+  background: aliceblue;
+  max-width: 60rem;
+}
+
+/* Add a red background color to the cancel button */
+button {
+  background-color: red;
+
+  color: white;
+  padding: 12px 20px;
+  /* border: solid 1px; */
+  cursor: pointer;
+  width: 100%;
+
+  border-radius: 0.25em;
+
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+button:hover {
+  opacity: 2;
+  transition: all 2s ease;
+}
+button:active {
+  color: white;
+  opacity: 2;
+  transition: all 1s ease;
+}
+
+/* .message {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+} */
+/* .taskMessage {
+  background-color: #ffffff;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+
+
+} */
+.taskMessage {
+  background-color: #ffffff;
+
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+  gap: 1.5rem;
+  transition: transform 250ms;
+}
+
+.taskMessage:hover {
+  transform: translateY(-10px);
+}
+
+ul {
+  list-style-type: none;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Pacifico", cursive;
+  color: #130f29;
+  /* text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa; */
+  text-shadow:
+    /* White glow */ 0 0 7px black, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+span {
+  font-size: 1rem;
+  font-stretch: ultra-condensed;
+}
+/* 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+@media (max-width: 980px) {
+  body {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    max-width: 20rem;
+  }
+}

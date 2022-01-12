@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Open+Sans&family=Raleway&family=Roboto&family=Source+Sans+Pro&display=swap");
+
+body {
+  background-image: url("images/Clock.jpg");
+  background-size: cover;
+
+  height: 100vh;
+}
+h1 {
+  font-family: "Cabin", "sans-serif";
+}
+section {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.37);
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section button {
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  background: yellow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+a {
+  text-decoration: none;
+}
+button:hover,
+button:active,
+a:hover {
+  background: crimson;
+  color: white;
+
+  /* color: white; */
+}
