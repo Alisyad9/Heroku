@@ -1,10 +1,10 @@
-const express = require("express");
-const homePage = require("./routes/homePage.js");
-const messageBoard = require("./routes/messageBoard.js");
-const postingPage = require("./routes/postingPage.js");
-const deletePost = require("./routes/deletePost.js");
+const express = require('express');
+const homePage = require('./routes/homePage.js');
+const messageBoard = require('./routes/messageBoard.js');
+const postingPage = require('./routes/postingPage.js');
+const deletePost = require('./routes/deletePost.js');
 
-const staticHandler = express.static("public");
+const staticHandler = express.static('public');
 
 const server = express();
 
@@ -13,13 +13,14 @@ server.use(staticHandler);
 
 const bodyParser = express.urlencoded({ extended: false });
 
-server.get("/", homePage.get);
-server.get("/message", messageBoard.get);
-server.get("/posting", postingPage.get);
-server.post("/posting", bodyParser, postingPage.post);
-server.post("/delete-message", bodyParser, deletePost.post);
+server.get('/', homePage.get);
+server.get('/message', messageBoard.get);
+server.get('/posting', postingPage.get);
+server.post('/posting', bodyParser, postingPage.post);
+server.post('/delete-message', bodyParser, deletePost.post);
 
-const PORT = process.env.PORT || 4444;
+const PORT = process.env.PORT || 3000;
+
 server.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 
 //////////////////////////the real layout below
